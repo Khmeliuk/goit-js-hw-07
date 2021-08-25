@@ -13,17 +13,6 @@ let item = [];
    const liiIem = document.createElement('li');
    liiIem.textContent = element;
    return liiIem;
-   
  });
 
 js_ingredients.append(...item);
-
-
-
-// item.forEach(element => {
-//   js_ingredients.appendChild(element);
-// });
-
-
-
-
