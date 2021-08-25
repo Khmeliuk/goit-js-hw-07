@@ -5,8 +5,8 @@ const js_item = category.querySelectorAll('.item');
 
 js_item.forEach(element => {
     // console.log(element);
-    let title = element.querySelector('h2');
-    let count = element.querySelectorAll('li');
-    console.log(`Категорія: ${title.textContent}`)
-    console.log(`Кількість елементів: ${count.length}`);
+    let titleRef = element.querySelector('h2');
+    let countRef = element.querySelectorAll('li');
+    console.log(`Категорія: ${titleRef.textContent}`)
+    console.log(`Кількість елементів: ${countRef.length}`);
 });
