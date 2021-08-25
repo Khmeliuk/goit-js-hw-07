@@ -1,7 +1,6 @@
 const refInput = document.querySelector("input");
 const refText = document.querySelector('#text');
 console.log(refText.style);
-// refText.style.fontSize  = "29px";
 console.log(refInput.value);
 refInput.addEventListener('input', atChangeFontSize);
 

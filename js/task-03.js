@@ -21,11 +21,8 @@ const makeImgMarkup = ({url, alt}) => {
 
 const gallaryMarkupAdd = images.map(makeImgMarkup)
   .join('');
-// console.log(gallaryMarkupAdd);
-// console.log(makeImgMarkup(images[0]));
+
 
 const imagList = document.querySelector('#gallery');
 imagList.insertAdjacentHTML('afterbegin', gallaryMarkupAdd);
 
-
-// refImg.style.width = '17px';
