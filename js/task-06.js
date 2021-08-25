@@ -1,16 +1,17 @@
 const inputRef = document.querySelector('input');
-console.log(inputRef.getAttribute('data-length'));
 
 inputRef.addEventListener('blur', onInputBlur);
-
+function changeClass(addClass, removeClass) {
+    inputRef.classList.remove(removeClass);
+    inputRef.classList.add(addClass); 
+}
 function onInputBlur(event) {
    
     let inputLength = event.currentTarget.value.length;
-    if (inputLength < inputRef.getAttribute('data-length'))
-    
-     inputRef.classList.add('invalid'); 
+    if (String(inputLength)  === inputRef.getAttribute('data-length'))
+      
+        changeClass('valid', 'invalid')
     else {
-        inputRef.classList.remove('invalid');
-        inputRef.classList.add('valid'); 
+        changeClass('invalid', 'valid')
     } 
 };
